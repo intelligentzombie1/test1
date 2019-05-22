@@ -22,3 +22,40 @@ for count in numberofasterics:
 square = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for count in square:
     print(f'*' * count)
+
+
+for ro in range(4):
+    if ro == 0:
+        print(f'     ' + f'*' + f'     ')
+    elif ro == 1:
+        print(f'    ' + f'*' + f' ' + f'*' + f'    ')
+    elif ro == 2:
+        print(f'   ' + f'*' + f' ' + f'*' + f' ' + f'*' + f'  ')
+    else:
+        print(f'  ' + f'*' + f'     ' + f'*' + f'  ')
+
+
+
+n = int(input('please enter an integer: '))
+i = 0
+result = 1
+while i < n:
+    result = result * 3
+    i += 1
+print(f'f({n})= {result}')
+
+
+#factorial
+def factorial(n):
+    if n == 1:
+        return n
+    else:
+        return n*factorial(n-1)
+
+num = int(input("Enter a number: "))
+if num < 0:
+    print("sorry, factorial dose not exist for negetive numbers")
+elif num == 0:
+    print("The factorial of 0 is 1 ")
+else:
+    print(f"the factorial of {num} is {factoria l(num)} ")
